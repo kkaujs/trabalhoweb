@@ -111,6 +111,11 @@ opacity: 0.5;
     width: 25px;
 }
 
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
 .conteudo{
     border-radius: 10px;
     width: 70vw;
@@ -193,12 +198,143 @@ opacity: 0.5;
 /*aside*/
 
 .barra-lateral{
+    display: flex;
+    flex-direction: column;
     border-radius: 10px 0 0 10px;
     margin: 10px 0;
     background-color: rgba(35, 47, 85, 0.9);
-    width: 25vw;
+    width: 30vw;
     height: 100vh;
-    position: relative;
-    float: right;
-}   
+    padding: 0 30px;
+}  
 
+.caixa-aside{
+    width: 100%;
+    padding: 30px 0;
+
+}
+
+.caixa-preco-desconto{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    font-size: 10px;
+}
+.preco-antigo{
+    color: #ccc;
+    text-decoration: line-through;
+    line-height: normal;
+}
+
+#seta-desconto{
+    width: 8px;
+}
+
+.preco-desconto{
+    color: #fff;
+    background-color: rgb(14, 201, 14);
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.preco-produto{
+    color: #fff;
+    font-size: 12px;
+}
+
+#preco-vestido{
+    font-size: 30px;
+}
+
+#pagamentos{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.linha{
+    margin: 10px 0;
+    border: 1px solid rgb(19, 29, 61) ;
+}
+
+.caixa-frete {
+    margin: 10px 0;
+}
+
+.cep{
+    width: 220px;
+    border: 1px solid #FF5858;
+    background: transparent;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cep::placeholder{
+    color: #ccc;
+    font-size: 12px;
+}
+
+.cep:focus{
+    border: 1px solid #fa7f7f;
+    box-shadow: 0 0 3px #fa7f7f;
+    outline-offset: 0px;
+    outline: none;
+}
+
+.btnok{
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-weight: 800;
+    background-color: #FF5858;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 20%) 0px 1px 5px;
+    transition: background-color 200ms;
+}
+
+.btnok:hover{
+    background-color: #fa7f7f;
+}
+
+.caixa-frete p{
+    font-size: 10px;
+}
+
+.caixa-compra{
+    padding: 30px 0;
+}
+.caixa-compra p{
+    padding: 10px 0;
+    font-size: 10px;
+}
+.compra{
+    background-color: #FF5858;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 20%) 0px 1px 5px;
+    transition: background-color 200ms;
+}
+
+.compra:hover{
+    background-color: #fa7f7f;
+}
+
+.compra a{
+    color: #fff;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.caixa-compra a{
+    font-size: 10px;
+    color: #fff;
+    text-decoration: none;
+}
