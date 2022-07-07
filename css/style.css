@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,32 +8,36 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-image: url("../images/fundo.png");
     background-repeat: no-repeat;
     background-size: 100%;
     text-align: justify;
 }
+
 /* Cabeçalho*/
 
-.cabecalho{
+.cabecalho {
     width: 100%vw;
     height: 300px;
-    position: relative; 
+    position: relative;
     display: flex;
     justify-content: flex-end;
 }
-#caixa-logo{
+
+#caixa-logo {
     position: absolute;
     top: 0;
     right: 30%;
     margin: 0 auto;
 }
-.logo{
-    margin-top: 30px;   
+
+.logo {
+    margin-top: 30px;
     width: 500px;
 }
-#caixa-pesquisa{
+
+#caixa-pesquisa {
     margin: 10px 10px 0 0;
     border: 1px solid #000;
     border-radius: 15px;
@@ -43,30 +48,32 @@ body{
     align-self: flex-start;
 }
 
-.pesquisa{
+.pesquisa {
     float: left;
     background: transparent;
     border: none;
 }
-.pesquisa::placeholder{
-color: #000;
-opacity: 0.5;
+
+.pesquisa::placeholder {
+    color: #000;
+    opacity: 0.5;
 }
 
-.pesquisa:focus{
+.pesquisa:focus {
     outline: none;
 }
 
-.lupa{
+.lupa {
     width: 25px;
     cursor: pointer;
     transition: width 300ms;
 }
 
-.lupa:hover{
+.lupa:hover {
     width: 30px;
 }
-.carrinho{
+
+.carrinho {
     width: 25px;
     cursor: pointer;
     margin: 10px 10px 0 0;
@@ -75,12 +82,12 @@ opacity: 0.5;
 
 /*Menu*/
 
-.navegacao{
+.navegacao {
     background-color: #000;
     opacity: 0.85;
 }
 
-.caixa-opc{
+.caixa-opc {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -88,35 +95,36 @@ opacity: 0.5;
     height: 40px;
 }
 
-.opc a{
+.opc a {
     text-decoration: none;
     font-weight: 700;
     color: #fff;
     transition: font-size 300ms;
 }
 
-.opc a:hover{
-    color:#FF5858;
+.opc a:hover {
+    color: #FF5858;
     font-size: 18px;
 }
 
 /*Section*/
-.icons{
+.icons {
     display: flex;
     gap: 25px;
     padding: 10px 0 0 10px;
 }
 
-.icon-produto{
+.icon-produto {
     width: 25px;
 }
 
-main{
+.corpo-principal {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
-.conteudo{
+.conteudo {
     border-radius: 10px;
     width: 70vw;
     height: 100vh;
@@ -130,22 +138,23 @@ main{
     float: left;
 }
 
-.share-fav{
+.share-fav {
     display: flex;
     justify-content: center;
     margin: 10px 0;
 }
-.produto{
+
+.produto {
     padding: 0 0 0 30px;
     display: flex;
     flex-direction: column;
 }
 
-.imagem-produto{
+.imagem-produto {
     border-radius: 20px;
 }
 
-.caixa-detalhes{
+.caixa-detalhes {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
@@ -153,34 +162,39 @@ main{
     padding-right: 5px;
 }
 
-.detalhes h1{
+.detalhes h1 {
     color: #FF5858;
     font-size: 2em;
 }
 
-.detalhes h2, h3, p{
+.detalhes h2,
+h3,
+p {
     color: #fff;
 }
 
-.detalhes h2::selection, p::selection{
+.detalhes h2::selection,
+p::selection {
     background: #FF5858;
 }
 
-.detalhes h1::selection{
+.detalhes h1::selection {
     background: #FF5858;
     color: #fff;
 }
-.caixa-tamanho{
+
+.caixa-tamanho {
     width: 100px;
     height: 50px;
     padding: 10px 0;
 }
-.tamanho{
+
+.tamanho {
     display: flex;
     gap: 20px;
 }
 
-.tamanho li a{
+.tamanho li a {
     text-decoration: none;
     padding: 5px;
     border: #FF5858 solid 2px;
@@ -190,14 +204,14 @@ main{
     transition: font-size, background-color 300ms;
 }
 
-.tamanho li a:hover{
+.tamanho li a:hover {
     font-size: 18px;
     background-color: #FF5858;
 }
 
 /*aside*/
 
-.barra-lateral{
+.barra-lateral {
     display: flex;
     flex-direction: column;
     border-radius: 10px 0 0 10px;
@@ -206,64 +220,87 @@ main{
     width: 30vw;
     height: 100vh;
     padding: 0 30px;
-}  
+}
 
-.caixa-aside{
+.caixa-aside {
     width: 100%;
     padding: 30px 0;
 
 }
 
-.caixa-preco-desconto{
+.caixa-preco-desconto {
     display: flex;
     justify-content: flex-start;
     gap: 10px;
     align-items: center;
     font-size: 10px;
 }
-.preco-antigo{
+
+.preco-antigo {
     color: #ccc;
     text-decoration: line-through;
     line-height: normal;
 }
 
-#seta-desconto{
+.preco-antigo::selection{
+    background-color: #FF5858;
+}
+
+#seta-desconto {
     width: 8px;
 }
 
-.preco-desconto{
+#seta-desconto::selection{
+    background-color: #FF5858;
+}
+
+.preco-desconto {
     color: #fff;
     background-color: rgb(14, 201, 14);
     padding: 2px;
     border-radius: 5px;
 }
-
-.preco-produto{
+.preco-desconto::selection{
+    background-color: #FF5858;
+}
+.preco-produto {
     color: #fff;
     font-size: 12px;
 }
 
-#preco-vestido{
+.preco-produto p::selection,
+strong::selection,
+u::selection,
+a::selection,
+span::selection{
+    background-color: #FF5858;
+}
+
+#preco-vestido::selection{
+    background-color: #FF5858;
+}
+
+#preco-vestido {
     font-size: 30px;
 }
 
-#pagamentos{
+#pagamentos {
     text-decoration: none;
     color: #fff;
     cursor: pointer;
     font-size: 10px;
 }
 
-.linha{
+.linha {
     margin: 10px 0;
-    border: 1px solid rgb(19, 29, 61) ;
+    border: 1px solid rgb(19, 29, 61);
 }
 
 .caixa-frete {
     margin: 10px 0;
 }
 
-.cep{
+.cep {
     width: 220px;
     border: 1px solid #FF5858;
     background: transparent;
@@ -271,19 +308,19 @@ main{
     border-radius: 10px;
 }
 
-.cep::placeholder{
+.cep::placeholder {
     color: #ccc;
     font-size: 12px;
 }
 
-.cep:focus{
+.cep:focus {
     border: 1px solid #fa7f7f;
     box-shadow: 0 0 3px #fa7f7f;
     outline-offset: 0px;
     outline: none;
 }
 
-.btnok{
+.btnok {
     margin-left: 5px;
     width: 40px;
     height: 40px;
@@ -297,22 +334,24 @@ main{
     transition: background-color 200ms;
 }
 
-.btnok:hover{
+.btnok:hover {
     background-color: #fa7f7f;
 }
 
-.caixa-frete p{
+.caixa-frete p {
     font-size: 10px;
 }
 
-.caixa-compra{
+.caixa-compra {
     padding: 30px 0;
 }
-.caixa-compra p{
+
+.caixa-compra p {
     padding: 10px 0;
     font-size: 10px;
 }
-.compra{
+
+.compra {
     background-color: #FF5858;
     padding: 12px;
     border-radius: 5px;
@@ -323,18 +362,88 @@ main{
     transition: background-color 200ms;
 }
 
-.compra:hover{
+.compra:hover {
     background-color: #fa7f7f;
 }
 
-.compra a{
+.compra a {
     color: #fff;
     font-weight: 900;
     text-decoration: none;
 }
 
-.oferta{
+.oferta {
     font-size: 10px;
     color: #fff;
     text-decoration: none;
+}
+
+/*footer*/
+.caixa-rodape {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.informacoes{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.opc-rodape a{
+    text-decoration: none;
+    color: #fff;
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding: 20px;
+}
+
+.social-media h3{
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+.lista-social{
+    width:100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.opc-social img{
+    width: 25px;
+}
+
+.cartoes-pagamentos{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+.compra-segura{
+    display: flex;
+    align-self: flex-end;
+    padding: 20px 0;
+}
+
+.direitos-reservados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 40px;
+    width: 100%;
+}
+
+.direitos-reservados h3{
+    color: #000;
+    font-size: 12px;
 }

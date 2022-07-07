@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,15 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Site - Kleiton e Laura</title>
 </head>
+
 <body>
     <header class="cabecalho">
         <div id="caixa-logo">
             <img class="logo" src="images/logo.png" alt="logo sunset">
         </div>
         <div id="caixa-pesquisa">
-                <input class="pesquisa" type="text" placeholder="Buscar...">
-                <img class="lupa" src="images/lupa.png" alt="lupa">
+            <input class="pesquisa" type="text" placeholder="Buscar...">
+            <img class="lupa" src="images/lupa.png" alt="lupa">
         </div>
         <div class="caixa-carrinho">
             <img class="carrinho" src="images/carrinho.png" alt="carrinho">
@@ -22,88 +24,147 @@
     </header>
     <nav class="navegacao">
         <ul class="caixa-opc">
-            <li class="opc"><a href="https://www.youtube.com/">Parcerias</a></li>
-           <li class="opc"><a href="#">Promoções</a></li>
-           <li class="opc"><a href="#">Feminino</a></li>
-           <li class="opc"><a href="#">Masculino</a></li>
-           <li class="opc"><a href="#">Infantil</a></li>
-           <li class="opc"><a href="#">Contato</a></li>
-           <li class="opc"><a href="#">Influencers</a></li>
+            <li class="opc" id="nav"><a href="https://www.youtube.com/">Parcerias</a></li>
+            <li class="opc" id="nav"><a href="#">Promoções</a></li>
+            <li class="opc" id="nav"><a href="#">Feminino</a></li>
+            <li class="opc" id="nav"><a href="#">Masculino</a></li>
+            <li class="opc" id="nav"><a href="#">Infantil</a></li>
+            <li class="opc" id="nav"><a href="#">Contato</a></li>
+            <li class="opc" id="nav"><a href="#">Influencers</a></li>
         </ul>
     </nav>
     <main>
-        <section class="conteudo">
-            <div class="caixa-produto">
+        <div class="corpo-principal">
+            <section class="conteudo">
+                <div class="caixa-produto">
                     <div class="share-fav">
                         <ul class="icons">
                             <li>
-                                <a href="#"><img class="icon-produto" src="images/compartilhar.png" alt="compartilhar"></a>
+                                <a href="#"><img class="icon-produto" src="images/compartilhar.png"
+                                        alt="compartilhar"></a>
                             </li>
                             <li>
                                 <a href="#"><img class="icon-produto" src="images/descontos.png" alt="desconto"></a>
                             </li>
                             <li>
-                                <a href="#"><img class="icon-produto" src="images/favorito.png" alt="favoritar"></a>  
+                                <a href="#"><img class="icon-produto" src="images/favorito.png" alt="favoritar"></a>
                             </li>
                         </ul>
                     </div>
                     <div class="produto">
                         <figure><img class="imagem-produto" src="images/Vestido.png" alt="Vestido"></figure>
-                    </div>  
-            </div>
-            <article class="caixa-detalhes">
-                <div class="detalhes">
-                    <h1>Vestido Sereia</h1>
-                    <h2>Adicionar algum detalhe aqui</h2>
-                    <div class="caixa-tamanho">
-                        <ul class="tamanho">
-                            <li><a href="#">P</a></li>
-                            <li><a href="#">M</a></li>
-                            <li><a href="#">G</a></li>
-                        </ul>
-                    </div>
-                   
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet sapiente saepe harum voluptate officiis ipsum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo tenetur expedita ab consequuntur, aliquid nisi obcaecati adipisci vitae voluptas rerum.</p>
-                </div>
-            </article>
-        </section>
-        <aside class="barra-lateral">
-            <div class="caixa-aside">
-                <div class="caixa-preco-desconto">
-                    <span class="preco-antigo">R$ 499,00</span>
-                    <div class="preco-desconto">
-                        <img id="seta-desconto" src="images/seta-baixo.png" alt="seta para baixo">
-                        15%
                     </div>
                 </div>
-                <div class="preco-produto">
-                    <h2 id="preco-vestido">R$ 239,99</h2>
-                    <p>à vista no <strong>cartão de crédito</strong></p>
-                    <a href="#" id="pagamentos"><u>Outras opções de pagamento</u></a>
-                </div>
-                <hr class="linha">
-
-                <div class="caixa-frete">
-                    <form>
-                        <p>Calcular frete</p>
-                        <div class="caixa-cep">
-                            <input class="cep" type="text" name="frete" placeholder="Digite o CEP" maxlength="9" minlength="9">
-                            <input class="btnok" type="submit" value="OK">
+                <article class="caixa-detalhes">
+                    <div class="detalhes">
+                        <h1>Vestido Sereia</h1>
+                        <h2>Adicionar algum detalhe aqui</h2>
+                        <div class="caixa-tamanho">
+                            <ul class="tamanho">
+                                <li><a href="#">P</a></li>
+                                <li><a href="#">M</a></li>
+                                <li><a href="#">G</a></li>
+                            </ul>
                         </div>
-                    </form>
-                    <hr class="linha">
-                </div>
-                <div class="caixa-compra">
-                    <div class="compra">
-                        <a href="#"><span>Comprar</span></a>
+
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet sapiente saepe harum voluptate
+                            officiis ipsum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo tenetur
+                            expedita ab consequuntur, aliquid nisi obcaecati adipisci vitae voluptas rerum.</p>
                     </div>
-                    <p><strong> Oferecido por: </strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat temporibus excepturi enim quae veritatis quisquam!</p>
+                </article>
+            </section>
+            <aside class="barra-lateral">
+                <div class="caixa-aside">
+                    <div class="caixa-preco-desconto">
+                        <span class="preco-antigo">R$ 499,00</span>
+                        <div class="preco-desconto">
+                            <img id="seta-desconto" src="images/seta-baixo.png" alt="seta para baixo">
+                            15%
+                        </div>
+                    </div>
+                    <div class="preco-produto">
+                        <h2 id="preco-vestido">R$ 239,99</h2>
+                        <p>à vista no <strong>cartão de crédito</strong></p>
+                        <a href="#" id="pagamentos"><u>Outras opções de pagamento</u></a>
+                    </div>
                     <hr class="linha">
-                    <a href="#" class="oferta">Veja mais ofertas essa</a>
+
+                    <div class="caixa-frete">
+                        <form>
+                            <p>Calcular frete</p>
+                            <div class="caixa-cep">
+                                <input class="cep" type="text" name="frete" placeholder="Digite o CEP" maxlength="9"
+                                    minlength="9">
+                                <input class="btnok" type="submit" value="OK">
+                            </div>
+                        </form>
+                        <hr class="linha">
+                    </div>
+                    <div class="caixa-compra">
+                        <div class="compra">
+                            <a href="#"><span>Comprar</span></a>
+                        </div>
+                        <p><strong> Oferecido por: </strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quaerat temporibus excepturi enim quae veritatis quisquam!</p>
+                        <hr class="linha">
+                        <a href="#" class="oferta">Veja mais ofertas essa</a>
+                    </div>
+
                 </div>
-               
+            </aside>
+        </div>
+        <footer class="rodape">
+            <div class="caixa-rodape">
+                <div class="informacoes">
+                    <ul class="nav-rodape">
+                        <li class="opc-rodape"><a href="#nav">Parcerias</a></li>
+                        <li class="opc-rodape"><a href="#nav">Promoções</a></li>
+                        <li class="opc-rodape"><a href="#nav">Feminino</a></li>
+                        <li class="opc-rodape"><a href="#nav">Masculino</a></li>
+                        <li class="opc-rodape"><a href="#nav">Infantil</a></li>
+                        <li class="opc-rodape"><a href="#nav">Contato</a></li>
+                        <li class="opc-rodape"><a href="#nav">Influencers</a></li>
+                    </ul>
+                    <ul>
+                        <li class="opc-rodape"><a href="">Destaques do mês</a></li>
+                        <li class="opc-rodape"><a href="">Novidades</a></li>
+                        <li class="opc-rodape"><a href="">Coleção Nova</a></li>
+                    </ul>
+                    <ul>
+                        <li class="opc-rodape"><a href="">Dúvidas frequentes</a></li>
+                        <li class="opc-rodape"><a href="">Compre pelo <br> Whatsapp</a></li>
+                    </ul>
+                </div>
+                <div class="cartoes-pagamentos">
+                    <h3>Aceitamos os cartões</h3>
+                    <img src="images/Cartões.png" alt="cartões">
+                </div>
+                <div class="social-media">
+                    <h3>Nos acompanhe</h3>
+                    <ul class="lista-social">
+                        <li class="opc-social"><a href=""><img src="images/social-media/whatsapp.png" alt="whatapp"></a>
+                        </li>
+                        <li class="opc-social"><a href=""><img src="images/social-media/facebook.png"
+                                    alt="facebook"></a></li>
+                        <li class="opc-social"><a href=""><img src="images/social-media/instagram.png"
+                                    alt="instagram"></a></li>
+                        <li class="opc-social"><a href=""><img src="images/social-media/twitter.png" alt="twitter"></a>
+                        </li>
+                        <li class="opc-social"><a href=""><img src="images/social-media/linkedin.png"
+                                    alt="linkedin"></a></li>
+                        <li class="opc-social"><a href=""><img src="images/social-media/youtube.png" alt="youtube"></a>
+                        </li>
+                    </ul>
+                    <div class="compra-segura">
+                        <img src="images/compra-segura.png" alt="compra segura">
+                    </div>
+                </div>
             </div>
-        </aside>
+            <div class="direitos-reservados">
+                <h3>&copy Todos os direitos reservados | Kleiton Santos e Laura Emanuelle</h3>
+            </div>
+        </footer>
     </main>
 </body>
+
 </html>
