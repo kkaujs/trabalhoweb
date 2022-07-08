@@ -240,14 +240,13 @@ p::selection {
     background-color: #FF5858;
 }
 
-
 /*aside*/
 
 .barra-lateral {
     display: flex;
     flex-direction: column;
-    border-radius: 10px 0 0 10px;
-    margin: 10px 0;
+    border-radius: 10px;
+    margin: 10px 10px 10px 0;
     background-color: rgba(35, 47, 85, 0.9);
     width: 30vw;
     height: 100vh;
@@ -432,6 +431,73 @@ span::selection{
     font-size: 10px;
     color: #fff;
     text-decoration: none;
+}
+/* Section 2*/
+
+.corpo-dois{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.caixa-outros-produtos{
+    width: 100vw;
+    background-color: rgba(35, 47, 85, 0.9);
+    border-radius: 10px;
+    margin: 0 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    justify-self: center;
+}
+
+.caixa-outros-produtos h2{
+    color: #fff;
+    font-size: 18px;
+    padding: 20px 0 0 30px;
+}
+
+.outros-produtos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    height: 350px;
+    gap: 20px;
+}
+
+.bloco img{
+    width: 200px;
+    border-radius: 10px 10px 0 0;
+    transition: width 300ms;
+}
+
+.bloco{
+    display: flex;
+    flex-direction: column;
+    background-color: #FF5858;
+    border-radius: 10px 10px 10px 10px;
+    align-items: center;
+    height: min-content;
+}
+
+.bloco .detalhes h3{
+    font-size: 12px;
+}
+
+.bloco .detalhes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.bloco img:hover{
+    cursor: pointer;
+    width: 210px;
 }
 
 /*footer*/
