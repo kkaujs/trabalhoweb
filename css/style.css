@@ -133,7 +133,6 @@ body {
     justify-content: flex-start;
     background-color: rgba(35, 47, 85, 0.9);
     opacity: 0.9;
-    position: relative;
     margin: 10px 10px;
     float: left;
 }
@@ -167,6 +166,10 @@ body {
     font-size: 2em;
 }
 
+.detalhes p{
+    font-size: 12px;
+}
+
 .detalhes h2,
 h3,
 p {
@@ -182,6 +185,34 @@ p::selection {
     background: #FF5858;
     color: #fff;
 }
+
+.caixa-cores{
+    display: flex;
+    gap: 10px;
+}
+
+.cores{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.corA{
+    background-color: #153D8B;
+    border: 1px solid #fff;
+}
+
+
+.corB{
+    background-color: #5E1323;
+}
+
 
 .caixa-tamanho {
     width: 100px;
@@ -208,6 +239,7 @@ p::selection {
     font-size: 18px;
     background-color: #FF5858;
 }
+
 
 /*aside*/
 
@@ -344,6 +376,9 @@ span::selection{
 
 .caixa-compra {
     padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .caixa-compra p {
@@ -367,6 +402,27 @@ span::selection{
 }
 
 .compra a {
+    color: #fff;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.adicionar-carrinho{
+    background-color: rgb(14, 201, 14);
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 20%) 0px 1px 5px;
+    transition: background-color 200ms;
+}
+
+.adicionar-carrinho:hover{
+    background-color: rgb(109, 218, 109);
+}
+
+.adicionar-carrinho a{
     color: #fff;
     font-weight: 900;
     text-decoration: none;
@@ -447,3 +503,4 @@ span::selection{
     color: #000;
     font-size: 12px;
 }
+
