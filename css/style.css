@@ -297,6 +297,7 @@ p::selection {
 .preco-produto {
     color: #fff;
     font-size: 12px;
+    font-style: normal;
 }
 
 .preco-produto p::selection,
